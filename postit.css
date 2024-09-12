@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h2,
+p {
+  font-family: "Indie Flower", cursive;
+}
+h2 {
+  font-weight: 900;
+  font-size: 45px;
+}
+p {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  margin-block: 20rem;
+  background-color: #666666;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.box {
+  width: 250px;
+  height: 15vh;
+  box-shadow: 3px 5px 10px rgba(0 0 0 / 60%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  transition: transform 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+.box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, #00000030, transparent 30%);
+}
+.post-1 {
+  background-color: #fbfcca;
+  transform: rotate(-3deg);
+}
+.post-2 {
+  background-color: #c8f7ca;
+  transform: rotate(5deg);
+}
+.post-3 {
+  background-color: #c5c5f0;
+  transform: rotate(-10deg);
+}
+.post-4 {
+  background-color: #c8f7ca;
+  transform: rotate(10deg);
+}
+.post-5 {
+  background-color: #fbfcca;
+  transform: rotate(-5deg);
+}
+.post-6 {
+  background-color: #c5c5f0;
+  transform: rotate(-8deg);
+}
+.post-7 {
+  background-color: #fbfcca;
+  transform: rotate(-5deg);
+}
+.post-8 {
+  background-color: #c8f7ca;
+  transform: rotate(7deg);
+}
